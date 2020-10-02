@@ -32,6 +32,12 @@ interface AuthableInterface extends ModelInterface
     public function getPassword();
 
     /**
+     * Must return the users Role
+     * @return string
+     */
+    public function getRole();
+
+    /**
      * Must set the model password and return true on success.
      *
      * @param  string $password
